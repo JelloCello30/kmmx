@@ -1,0 +1,22 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.venv/
+venv/
+dist/
+build/
+*.egg-info/
+.env
+*.pem
+*.key
+.kmmx-state.json
+.kmmx-state.json.lock
+.kmmx-state.json.*.tmp
+.kmmx-*.lock
+data/*.jsonl
+logs/
+
+# Live credentials / local config — never commit
+config.json
+.DS_Store

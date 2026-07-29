@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kmmx"
+version = "0.1.0"
+description = "Risk-first, incentive-aware Kalshi market-making bot"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = []
+
+[project.optional-dependencies]
+live = ["cryptography>=42.0"]
+dev = ["pytest>=8.0", "ruff>=0.5"]
+
+[project.scripts]
+kmmx = "kmmx.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+
