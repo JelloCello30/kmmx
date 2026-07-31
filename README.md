@@ -37,7 +37,7 @@ kmmx run MARKET-TICKER --paper --duration 3600 --config config.json
 Run tests with the standard library:
 
 ```bash
-python -m unittest discover -s tests -v
+python -m unittest discover -v
 ```
 
 ## Live mode
